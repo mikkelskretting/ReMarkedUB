@@ -1,0 +1,139 @@
+
+
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-between;
+}
+header nav {
+    display: flex;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: RobotSlab;
+}
+
+header .topnav a img{
+width: 80%;
+height: 100%;
+
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+
+header nav a:hover {
+    background-color: rgb(75, 75, 75);
+}
+
+.fa-bars{
+    color: white;
+    display: none;
+
+    font-size: 30px;
+}
+
+#Forsidebilde{
+    width: 100%;
+    max-height: 650px;
+}
+.Intro_tekst > h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 25px;
+    line-height: 40px;
+    background-color: rgb(227, 227, 227);
+    padding: 2% 40% 2% 20px;
+    font-family: RobotSlab, sans-serif;
+}
+
+.Intro_tekst > p {
+    margin-top: 0;
+    font-size: 25px;
+    line-height: 40px;
+    background-color: rgb(227, 227, 227);
+    padding: 0px 40% 0px 3%;
+    font-family: Raleway, sans-serif;
+}
+
+@font-face {
+    font-family: RobotSlab;
+    src: url(../Bilder/RobotoSlab-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../Bilder/Raleway-Medium.ttf);
+}
+
+/* Hamburgermeny */
+@media(max-width: 550px){
+    header{
+        flex-direction: column;
+        height: 20%;
+        display: flex;
+    }
+    
+    header .topnav{
+        width: 50%; 
+        align-items: center;
+    }
+    header nav{
+        display: none;
+    }
+
+    .fa-bars {
+        display: flex; 
+        right: 5px;
+    }
+
+    div i{
+        float: right;
+        position: absolute;
+        top: 10px;
+    }
+
+    header nav.show {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    header > div > a > img {
+        width: 80%;
+        height: 100%;
+    }
+
+    .Intro_tekst > h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 20px;
+        line-height: 40px;
+        background-color: rgb(227, 227, 227);
+        padding: 2% 20% 2% 20px;
+        font-family: RobotSlab, sans-serif;
+    }
+    .Intro_tekst > p {
+        margin-top: 0;
+        font-size: 15px;
+        line-height: 25px;
+        background-color: rgb(227, 227, 227);
+        padding: 0px 10% 0px 3%;
+        font-family: Raleway, sans-serif;
+}
+}
+
+
+
